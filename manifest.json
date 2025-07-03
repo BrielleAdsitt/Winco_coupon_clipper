@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "WinCo Auto Coupon Clipper",
+    "version": "1.0",
+    "description": "Automatically clips all digital coupons on the WinCo website.",
+    "permissions": [],
+    "host_permissions": [
+      "https://www.wincofoods.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.wincofoods.com/coupons/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["injected.js"],
+        "matches": ["https://www.wincofoods.com/*"]
+      }
+    ],
+    "icons": {
+      "128": "icons/icon128.png"
+    }
+  }
+  
