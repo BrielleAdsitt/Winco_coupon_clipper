@@ -111,7 +111,7 @@
         console.warn('❌ Error clicking coupon button:', e);
       }
 
-      setTimeout(clipNextCoupon, 10); // Wait a bit for DOM to update
+      setTimeout(clipNextCoupon, 2); // Wait a bit for DOM to update
     } else {
       console.log('✅ All coupons clipped.');
     }
